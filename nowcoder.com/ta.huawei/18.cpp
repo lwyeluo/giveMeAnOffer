@@ -86,7 +86,7 @@ int main() {
     char ip[20], mask[20];
     struct OUTPUT out;
     memset(&out, 0, sizeof(out));
-    while(scanf("%[^~]s", ip) != EOF && scanf("~%s", mask) != EOF) {
+    while(scanf("%[^~]", ip) != EOF && scanf("~%s", mask) != EOF) {
         check(ip, mask, &out);
     }
     out.print();
